@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "workspaces-example",
+  "version": "1.0.0",
+  "description": "This project is a workspaces example which contains few apps which are linked together",
+  "main": "index.js",
+  "scripts": {
+    "main": "yarn workspace main-web dev",
+    "preview": "yarn workspace main-web preview"
+  },
+  "author": "Sharath Gudimella",
+  "license": "ISC",
+  "workspaces": {
+    "packages": [
+      "./packages/main-web",
+      "./packages/app1",
+      "./packages/common-components"
+    ]
+  },
+  "packageManager": "yarn@4.1.0"
+}
